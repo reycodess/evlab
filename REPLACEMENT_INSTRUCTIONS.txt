@@ -1,0 +1,22 @@
+EV-LAB IMPROVEMENT REPLACEMENT FILES
+
+Replace these files in your existing EV-LAB project, preserving all other files:
+
+lib/main.dart
+lib/theme/app_theme.dart
+lib/screens/settings_screen.dart
+lib/screens/home_screen.dart
+lib/screens/virtual_lab_screen.dart
+lib/screens/result_screen.dart
+lib/screens/structure_screen.dart
+assets/models/catalase.glb
+assets/models/lipase.glb
+
+After replacing:
+1. Run: flutter pub get
+2. Run: flutter analyze
+3. Run: flutter run
+
+The package does NOT include the rest of the project, so your existing database,
+lesson data, dependencies, web folder, Android/iOS folders, and other screens are
+left untouched.

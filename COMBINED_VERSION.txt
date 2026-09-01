@@ -1,0 +1,6 @@
+EV-LAB Combined V3 + PhET Edition
+
+This package combines the realistic interactive V3 laboratory with the PhET-style workstation.
+Use this as the single replacement package; do not install V3 and PhET separately.
+
+Scientific Kinetics Graphs + Mechanism Illustration update: 2026-08-29

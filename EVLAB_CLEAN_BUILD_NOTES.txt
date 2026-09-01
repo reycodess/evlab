@@ -1,0 +1,24 @@
+EV-LAB Clean Scientific Fixed Final
+
+Base: rich EV-LAB V3 + PhET-style laboratory project.
+
+Preserved:
+- Full virtual_lab_screen.dart laboratory flow and existing integrations
+- Realistic thermometer and pH controls
+- PhetLabBench
+- Molecular/reaction simulation
+- Enzyme-specific temperature and pH behavior
+- Inhibitor system
+- Scientific kinetics graphs
+- Missions/progress/history/results
+- 3D enzyme viewer and existing model assets
+
+Fixes:
+- Scientific graph widgets use the required labelA/labelB constructor arguments.
+- Graphs call the public temperatureFactorForCurve/phFactorForCurve helpers in EnzymeSimulation.
+- Removed only the confirmed unused _phColor and _phDescription helper methods.
+- No simulation or active laboratory feature was removed to silence warnings.
+
+After replacing the project, run:
+flutter pub get
+flutter analyze

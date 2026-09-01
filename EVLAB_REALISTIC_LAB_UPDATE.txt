@@ -1,0 +1,19 @@
+EV-LAB REALISTIC LAB UPDATE
+
+Included:
+- Equipment drawer and staged instrument collection
+- Thermometer, pH meter, micropipette, magnetic stirrer and inhibitor vial
+- Thermometer/pH controls use standard sliders and remain locked until collected
+- Substrate addition is tied to micropipette collection
+- Stirring is tied to stirrer collection and minimum mixing preparation
+- Inhibitor controls are locked until the inhibitor vial is collected
+- Live reaction chamber, particles and mixing animation retained
+- Michaelis-Menten substrate behavior and inhibition kinetics retained
+- Mission, XP/progress, experiment history and detailed results retained
+- Lazy-loaded GLB viewer with lightweight molecular animation fallback
+- Existing Amylase, Catalase and Lipase GLB files included
+
+After replacing the project, run:
+flutter clean
+flutter pub get
+flutter run -d emulator-5554

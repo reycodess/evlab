@@ -1,0 +1,9 @@
+{
+  "name": "EV-LAB Virtual Enzyme Laboratory",
+  "short_name": "EV-LAB",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F4F8F5",
+  "theme_color": "#2E7D32",
+  "description": "Interactive virtual enzyme laboratory for learning and evaluation."
+}

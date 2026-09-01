@@ -1,0 +1,21 @@
+EV-LAB CLEAN SINGLE LAB — SCIENTIFIC GRAPH & ILLUSTRATION UPDATE
+
+This package keeps the existing clean single-laboratory architecture and adds:
+
+1. Scientific kinetics plots
+   - Michaelis-Menten velocity vs substrate concentration.
+   - Optional inhibited curve using competitive, pure noncompetitive, uncompetitive, or mixed idealized kinetics.
+   - Temperature relative-activity curve using the enzyme's configured reference data with linear interpolation.
+   - pH relative-activity curve using the enzyme's configured reference data with linear interpolation.
+
+2. Corrected mixed-inhibition model
+   Mixed inhibition uses the general equation v = Vmax[S] / (alpha*Km + alphaPrime*[S]) with alpha and alphaPrime intentionally different in the educational model.
+
+3. Scientific mechanism illustration
+   A clean schematic shows E -> E+S -> ES -> E+P and identifies the visualization as a conceptual, not-to-scale illustration.
+
+4. Integration
+   ResultScreen now receives the selected Enzyme and the last inhibition settings from VirtualLabScreen, so the graphs use the same enzyme data and kinetic settings as the experiment.
+
+Scientific scope note:
+The curves are model/reference curves, not direct physical measurements. Temperature and pH curves depend on the reference values stored in each enzyme's data. The molecular/particle animation remains a conceptual visualization and should not be described as molecular dynamics.

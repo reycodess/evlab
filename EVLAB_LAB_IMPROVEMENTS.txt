@@ -1,0 +1,25 @@
+EV-LAB LAB IMPROVEMENTS
+
+This build is based on the uploaded EV-LAB project and keeps the existing VirtualLabScreen architecture rather than replacing it with a shortened screen.
+
+Interactive laboratory improvements:
+- Restored the realistic VirtualThermometer and RealisticPHControl widgets in the main laboratory.
+- Added explicit sliders directly beneath both realistic instruments so temperature and pH can always be changed reliably.
+- Instrument displays update immediately when the sliders move.
+- Live predicted activity updates while temperature, pH, substrate, mixing, and inhibitor ratio are changed.
+- Temperature and pH controls are enabled after their corresponding bench calibration step, preventing the old stuck-control problem while retaining preparation realism.
+- Added Explore Conditions presets for cold, optimum, heat stress, acidic, and basic conditions.
+- Added optional inhibitor preparation to the visible Bench Setup instead of relying on the old hidden equipment drawer.
+- Preserved the existing Michaelis-Menten and inhibition calculations, missions, XP, history, analysis, reaction chamber, and molecular animation.
+
+3D model improvements:
+- Catalase and Lipase GLB files were re-exported with explicit PBR materials and vertex colors so they render as colored protein models.
+- Amylase remains included.
+- The viewer keeps camera controls and a molecular-animation fallback while the real GLB loads.
+
+After replacing the project files:
+1. flutter clean
+2. flutter pub get
+3. flutter run -d emulator-5554
+
+Note: the protein colors are educational visualization colors, not atom-by-atom chemical coloring. The kinetic simulation remains a model rather than a physical laboratory measurement.

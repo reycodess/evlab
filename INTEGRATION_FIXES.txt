@@ -1,0 +1,12 @@
+EV-LAB integration fix
+
+This version intentionally preserves the existing laboratory functionality.
+
+1. phet_lab_bench.dart: the activity `level` is USED in the bench header as live state (READY / LOW / MODERATE / HIGH), rather than deleted.
+2. scientific_kinetics_graphs.dart: the required `labelA` arguments are present for the temperature and pH charts.
+3. The scientific kinetics calculations and existing enzyme/simulation integrations are preserved.
+
+After replacing the files, run:
+flutter clean
+flutter pub get
+flutter analyze
